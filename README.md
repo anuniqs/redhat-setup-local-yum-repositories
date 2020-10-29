@@ -1,0 +1,2 @@
+# setup-local-yum-repositories
+In Linux, a repository is a central database of software. Linux distributions have a central repository for system and commonly-used software.  Often administrators may have a need for a specialized software package, or to manage network bandwidth. For these reasons, they need to set up a new custom local repository.  Yum is a local repository for RPM package files. These packages compress available software for Linux distributions. With the repository, you can download, install and hold packages on a local disk or remotely.
