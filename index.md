@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+### Set Up and Configure Yum Repositories on RedHat, Using Package
 
-You can use the [editor on GitHub](https://github.com/anuniqs/redhat-setup-local-yum-repositories/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[root@localhost ~]# nano /etc/yum.repos.d/redhat.repo
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[root@localhost ~]# nano /etc/yum.repos.d/redhat_repo.repo
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+[InstallMedia]
+name=Red Hat Enterprise Linux 7.8
+mediaid=1582647234.022611
+metadata_expire=-1
+gpgcheck=1
+cost=500
+enabled=1
+baseurl=file:///Packages/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+[root@localhost ~]# rpm -ivh deltarpm-3.6-3.el7.x86_64.rpm createrepo-0.9.9-28.el7.noarch.rpm python-deltarpm-3.6-3.el7.x86_64.rpm
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anuniqs/redhat-setup-local-yum-repositories/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[root@localhost ~]# createrepo -v /Packages (Keep all the rpm packages inside this directory)
 
-### Support or Contact
+[root@localhost ~]# yum clean all
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[root@localhost ~]# yum repolist
+
+
+### Set Up and Configure Yum Repositories on RedHat, Using Package
+
