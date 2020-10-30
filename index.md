@@ -1,3 +1,10 @@
+### Gyan
+
+YUM : The Yellowdog Updater, Modified is a free and open-source command-line package-management utility for computers running the Linux operating system using the RPM Package Manager.
+
+RPM : RPM Package Manager is a free and open-source package management system. The name RPM refers to .rpm file format and the package manager program itself. RPM was intended primarily for Linux distributions; the file format is the baseline package format of the Linux Standard Base. 
+
+
 ### Set Up and Configure Yum Repositories on RedHat, Using Package
 
 [root@localhost ~]# nano /etc/yum.repos.d/redhat.repo
