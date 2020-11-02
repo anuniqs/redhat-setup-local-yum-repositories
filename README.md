@@ -9,7 +9,9 @@
 `[root@localhost ~]#` mount -o loop /home/anup/rhel-server-7.9-x86_64-dvd.iso /dvd/
 
 `[root@localhost ~]#` lsblk
+
 or,
+
 `[root@localhost ~]#` df -h
 
 
