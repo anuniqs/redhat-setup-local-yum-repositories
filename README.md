@@ -1,4 +1,4 @@
-### Set Up and Configure Yum Repositories on RedHat, Using Package
+### Set Up and Configure local Yum Repositories on RedHat Using Packages from .iso
 
 -rw-rw-r--.  1 anup anup 4526702592 Nov  2 12:48 rhel-server-7.9-x86_64-dvd.iso
 
