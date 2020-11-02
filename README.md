@@ -41,6 +41,3 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 
 [root@localhost ~]# yum repolist
 
-
-### Set Up and Configure Yum Repositories on RedHat, Using Package
-
